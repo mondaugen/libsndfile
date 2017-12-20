@@ -161,7 +161,7 @@ autoconf || exit 1
 # CMake process src/cmake-config.h to create src/config.h.
 rm -f src/config.h src/cmake-config.h
 
-cd $olddir
+cd "$olddir"
 
 if test -d .git/ ; then
 	fprecommit=.git/hooks/pre-commit
